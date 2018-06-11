@@ -1,8 +1,6 @@
 from django.conf.urls import url
-from .views import adddata
+from . import views
 
 urlpatterns = [
-    url(r'^adddata',adddata),
-    
-    
+    url(r'^$', views.post_list, name='post_list'),
 ]

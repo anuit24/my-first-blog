@@ -1,9 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-@api_view(['POST'])
-def adddata(request):
-    pass
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
 
-    
     
